@@ -1,3 +1,6 @@
+; Джапаров Эмирхан Майрамбекович, БПИ197
+; 8-вариант
+; Условие задания:   A[i] > 5 ? B[i] = A[i] +5 : A[i] < -5 ? B[i] = A[i] - 5 : 0
 format PE console
 entry start
 
@@ -59,6 +62,7 @@ VectorInput:
         push vec_size
         push strIncorSize
         call [printf]
+        call [getch]
         push 0
         call [ExitProcess]
 ; else continue...
